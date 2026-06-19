@@ -42,6 +42,11 @@ function buildCoverSlide() {
       <span class="cover-pill">⏳ 1903 – Today</span>
       <span class="cover-pill">🏆 Record Breakers</span>
     </div>
+    <div class="cover-flags">
+      <span title="Iran">🇮🇷</span>
+      <span title="Germany">🇩🇪</span>
+      <span title="United States">🇺🇸</span>
+    </div>
     <div class="cover-student-card">
       <div class="cover-student-row">
         <span class="cover-student-label">👦 Presented by</span>

@@ -181,6 +181,27 @@ html, body {
   width: 20px; height: 20px;
 }
 
+/* Flags row on cover */
+.cover-flags {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.cover-flags span {
+  font-size: 2.8rem;
+  line-height: 1;
+  filter: drop-shadow(0 4px 10px rgba(0,0,0,0.4));
+  transition: transform 0.2s;
+  cursor: default;
+}
+
+.cover-flags span:hover {
+  transform: scale(1.25) translateY(-4px);
+}
+
 /* Student card on cover */
 .cover-student-card {
   display: flex;
