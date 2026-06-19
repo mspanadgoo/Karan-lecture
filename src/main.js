@@ -3,7 +3,7 @@ import { pilots } from './data.js';
 
 // ── State ──────────────────────────────────────────────
 let current = 0;
-const TOTAL = pilots.length + 3; // cover + karan + pilots + end
+const TOTAL = pilots.length + 4; // cover + pilots + karan + karanWhy + end
 
 // ── Stars background ──────────────────────────────────
 function createStars() {
@@ -37,8 +37,8 @@ function buildCoverSlide() {
     <h1 class="cover-title">Famous Pilots<br>of History</h1>
     <p class="cover-subtitle">A Journey Through Aviation History</p>
     <div class="cover-pills">
-      <span class="cover-pill">✈️ 7 Amazing Pilots</span>
-      <span class="cover-pill">🌍 4 Countries</span>
+      <span class="cover-pill">✈️ 8 Amazing Pilots</span>
+      <span class="cover-pill">🌍 3 Countries</span>
       <span class="cover-pill">⏳ 1903 – Today</span>
       <span class="cover-pill">🏆 Record Breakers</span>
     </div>
@@ -98,6 +98,73 @@ function buildKaranSlide() {
       <div class="karan-costume-note">
         🥸 Yes, that is a real mustache. Real pilots have mustaches. 😎
       </div>
+    </div>
+  `;
+  return slide;
+}
+
+// ── Karan Why Slide ────────────────────────────────────
+function buildKaranWhySlide() {
+  const slide = document.createElement('div');
+  slide.className = 'slide slide-karan-why';
+
+  slide.innerHTML = `
+    <div class="why-header">
+      <div class="why-plane-deco">✈️</div>
+      <div class="why-header-text">
+        <div class="karan-tag" style="margin-bottom:10px;">💭 Karan Speaks!</div>
+        <h2 class="why-main-title">My Big Love for Flying ❤️</h2>
+      </div>
+    </div>
+
+    <div class="why-body">
+
+      <!-- Section 1 -->
+      <div class="why-section">
+        <h3 class="why-section-title">🛩️ Why I Dream of Being a Pilot</h3>
+        <div class="why-reasons">
+          <div class="why-reason-card">
+            <span class="why-emoji">🏔️</span>
+            <p>When I fly in an airplane, I love looking down and seeing everything from way up high — buildings, oceans, mountains and tiny little cars!</p>
+          </div>
+          <div class="why-reason-card">
+            <span class="why-emoji">🚀</span>
+            <p>When I fly a super fast jet, I love zooming through the clouds and going on exciting missions in the sky!</p>
+          </div>
+          <div class="why-reason-card">
+            <span class="why-emoji">🤝</span>
+            <p>I love the idea of flying people safely to where they want to go. It feels really great when everyone trusts you as their pilot!</p>
+          </div>
+          <div class="why-reason-card">
+            <span class="why-emoji">🌍</span>
+            <p>As a pilot, I can travel to every country in the world and see so many amazing places. That sounds so cool to me!</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 2 -->
+      <div class="why-section">
+        <h3 class="why-section-title">💺 What I Love About Airplanes</h3>
+        <div class="why-reasons">
+          <div class="why-reason-card">
+            <span class="why-emoji">🔊</span>
+            <p>I LOVE the sound of the airplane engine when it starts! It is super loud and powerful and it makes me feel so excited inside!</p>
+          </div>
+          <div class="why-reason-card">
+            <span class="why-emoji">🪖</span>
+            <p>I love wearing the pilot uniform with the hat and the badge. When I put it on, I really feel like a real pilot!</p>
+          </div>
+          <div class="why-reason-card">
+            <span class="why-emoji">🌤️</span>
+            <p>I love flying above the clouds. From up there the clouds look like fluffy white cotton candy — it is SO beautiful!</p>
+          </div>
+          <div class="why-reason-card">
+            <span class="why-emoji">🏁</span>
+            <p>Taking off is my favourite part! When the plane goes really fast on the runway and then lifts up — my heart jumps with joy every time!</p>
+          </div>
+        </div>
+      </div>
+
     </div>
   `;
   return slide;
@@ -340,6 +407,9 @@ function init() {
 
   // Karan math slide — second to last
   wrapper.appendChild(buildKaranSlide());
+
+  // Karan "why I love flying" slide
+  wrapper.appendChild(buildKaranWhySlide());
 
   wrapper.appendChild(buildEndSlide(TOTAL - 1));
   app.appendChild(wrapper);
