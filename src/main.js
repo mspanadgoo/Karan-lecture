@@ -39,13 +39,8 @@ function buildCoverSlide() {
     <div class="cover-pills">
       <span class="cover-pill">✈️ 8 Amazing Pilots</span>
       <span class="cover-pill">🌍 3 Countries</span>
-      <span class="cover-pill">⏳ 1903 – Today</span>
+      <span class="cover-pill">⏳ 1867 – Today</span>
       <span class="cover-pill">🏆 Record Breakers</span>
-    </div>
-    <div class="cover-flags">
-      <span title="Iran">🇮🇷</span>
-      <span title="Germany">🇩🇪</span>
-      <span title="United States">🇺🇸</span>
     </div>
     <div class="cover-student-card">
       <div class="cover-student-row">
@@ -283,7 +278,7 @@ function buildEndSlide(slideIndex) {
     <h2 class="end-title">The Sky Is Not<br>The Limit!</h2>
     <p class="end-sub">
       Amazing job, Karan! 🎉<br>
-      You learned about 7 incredible pilots who changed the world.
+      You learned about 8 incredible pilots who changed the world.
     </p>
     <div class="pilot-grid">${chips}</div>
     <div class="end-credit">
